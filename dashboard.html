@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard</title>
 </head>
 <body>
-    <script>
-        function luas(r) {
-    const phi = 3.14
-    L = phi * (r * r)
-    return L
-}
+    <h1>Selamat datang, <span id="nama"></span>!</h1>
 
-let r = 2
-let luas_lingkaran = luas(r)
-console.log('Luas: '+luas_lingkaran)
-    </script>
+    <script>
+        let nama = localStorage.getItem('nama');
+
+        document.getElementById('nama').innerHTML = nama;
+
+    </script>    
+
 </body>
 </html>

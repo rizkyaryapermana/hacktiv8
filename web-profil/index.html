@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <title>Document</title>
+<style>
+ body {margin:0;}
+ .navbar-nav{
+    padding: 10px;
+    background-color:  white;
+display: flex;
+justify-content: flex-end;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px ;
+  text-decoration: none;
+  color: black;
+  margin-right: 20px;
+}
+.container{
+    
+ margin-top: 100px;
+ margin-left: 70px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 90%;
+ display: flex;
+}
+.container img{
+margin-left: 15px;
+margin-top: 20px;
+}
+.card-body{
+    margin-left: 24px;
+}
+.container button{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    
+    padding: 10px 15px;
+border-radius: 2px;
+}
+.card-footer{
+  margin-left: 200px;
+  margin-top: 18px;
+}
+.form-regist{
+  margin-left: 70px;
+  margin-top: 50px;
+}
+</style>
+</head>
+<body> 
+    
+    <nav class="navbar ">
+          <ul class="nav navbar-nav">
+            <li><a  href="#">HOME</a></li>
+            <li><a href="#">PRODUCT</a></li>
+            <li><a href="#">GALERY</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">INVENTORY</a></li>
+          </ul>
+      </nav>
+    
+      <div class="container">
+        <div class="card">
+            <img src="Capture.PNG" alt="">
+        </div>
+        <div class="card-body">
+            <h3>Rizky Arya Permana</h3>
+            <span>Front End Enginer</span><br>
+            <button type="submit" style="background-color:blue; color: white; border:  1px none;">Edit</button>
+            <button type="submit" style="background-color:white; color: green; border: 1px solid black;">Resume</button>
+        
+        </div>
+        <div class="card-footer ">
+            <span><b> Avaibility </b></span>
+            <span style="margin-left: 50px ;">Full Time</span><br>
+            <span><b> Usia </b></span>
+            <span style="margin-left: 85px ;">17</span><br>
+            <span><b>Lokasi</b></span>
+            <span style="margin-left: 70px;">Surabaya, Indonesia</span><br>
+            <span><b>Pengalaman</b> </span>
+            <span style="margin-left: 32px;">2</span><br>
+            <span><b>Email</b></span> 
+            <span style="margin-left: 75px;">aryapermana0706@gmail.com</span>         
+          </div>
+      </div>
+        <form action="" class="form-regist">
+        <label for="nama" style="vertical-align: top;"><b> Nama </b></label><br>
+   <input type="text" name="nama" id="nama" placeholder="" style="width: 94%; margin-top: 15px; height: 25px;"><br>
+   <label class="mt-5" for="role" style="vertical-align: top; "><b> Role </b></label> <br>
+   <input type="text" name="" id="role" style="width: 94%; margin-top: 15px; height: 25px;"><br>
+   <label for="avaibility" style="vertical-align: top;"><b> Avaibility </b></label> <br>
+   <input type="text" name="" id="avaibility"  style="width: 94%; margin-top: 15px; height: 25px;"><br>
+   <label for="usia" style="vertical-align: top; "><b> Usia</b></label> <br>
+   <input type="text" name="" id="usia"  style="width: 94%; margin-top: 15px; height: 25px;" ><br>
+   <label for="lokasi" style="vertical-align: top;"><b> Lokasi </b></label> <br>
+   <input type="text" name="" id="lokasi"  style="width: 94%; margin-top: 15px; height: 25px;" ><br>
+   <label for="years experience" style="vertical-align: top;"><b> Years Experience </b></label> <br>
+   <input type="text" name="" id="year_experience"  style="width: 94%; margin-top: 15px; height: 25px;" ><br>
+   <label for="email" style="vertical-align: top;"><b> Email </b></label> <br>
+   <input type="text" name="" id="email"   style="width: 94%; margin-top: 15px; height: 25px;"><br>
+   
+   <button type="submit"  style="width: 95%; margin-top: 15px; height: 35px; background-color: green; color: white;">SUBMIT</button>
+    </form>
+
+    <script>
+      document.getElementById('nama').value = 'Rizky Arya Permana'
+      document.getElementById('role').value = 'Front End Enginer'
+      document.getElementById('avaibility').value = 'Full Time'
+      document.getElementById('usia').value = '22'
+      document.getElementById('lokasi').value = 'Surabaya, Indonesia'
+      document.getElementById('year_experience').value = '2'
+      document.getElementById('email').value = 'aryapermana0706@gmail.com'
+    </script>
+</body>
+
+</html>

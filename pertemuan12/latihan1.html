@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+   // let var = /pattern/flag;
+    let pola = /ab + c/;
+    console.log(pola);
+    console.log(typeof(pola));
+
+    let pola2 = new RegExp('ab+c');
+    console.log(pola2);
+    console.log(typeof pola2);
+
+//    let pola_dinamis = prompt('Cari makanan apa ?' , 'Nasi');
+  //  let regexp = new RegExp(`${pola_dinamis}/i`);
+    //console.log(regexp);
+
+    let pola_regexp_literal = /Nasi/ig;
+    let string = 'Nasi goreng di sini laris, nasinya banyak.';
+
+    let pola_lorem = /consectetur/;
+    let string_lorem = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, corrupti voluptatibus. Quas reprehenderit ullam mollitia sapiente quae, et esse perferendis repellendus nesciunt iure necessitatibus molestiae possimus dolorum minus laborum facere! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos id dignissimos consectetur ut hic harum incidunt perspiciatis, illum, praesentium, sequi quaerat consequatur accusamus vel? Expedita qui quis repudiandae molestiae eos! Lorem ipsum, dolor sit a';
+
+    let x = string_lorem.match(pola_lorem);
+
+    console.log(x);
+    console.log('Kata "consectetur" berulang sebanyak ' + );
+
+</script>
+
+</body>
+</html>

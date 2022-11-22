@@ -1,0 +1,54 @@
+let bumn1 = "PLN"; 
+let bumn2 = "Pertamina"; 
+let bumn3 = "PDAM"; 
+let bumn4 = "Telkom"; 
+let bumn5 = "KAI";
+
+let bumn = Array ("'PLN', 'Pertamina' ,'PDAM', 'Telkom', 'KAI'");
+
+console.log(bumn)
+let _bumn =  ['Pegadaian', 'Pos Indonesia', 'Indofarma', 'Krakatau Steel', ' Garuda Indonesia'];
+
+let __bumn = [];
+__bumn [25] = "Kimia Farma";
+__bumn [26] = "BRI";
+__bumn [27] = "BTPN";
+
+let mahasiswa = [];
+mahasiswa['nama'] = "Rizky Arya Permana";
+mahasiswa['semester'] = "7";
+mahasiswa['IPK'] = "3.4";
+
+mahasiswa['nama'] = "Rizky Arya Permana";
+mahasiswa['semester'] = "7 Update";
+mahasiswa['IPK'] = "3.4 Update";
+
+console.log(mahasiswa);
+
+var animals = ["Lion", "Tiger" , "Elephant"];
+
+console.log(animals);
+
+animals[0] = "Fish";
+animals[3] = "Giraffe";
+animals[4] = "Butterfly";
+animals[5] = "Crocodile";
+animals["habitats"] = "Hutan";
+animals[6] = ['Badak','Rusa','Banteng'];
+
+var rekap_nilai =[
+    ["Juni",90],
+    ["Juli",10],
+    ["Jupri",20],
+    ["Julian",30],
+];
+
+console.log(rekap_nilai);
+
+
+
+let martriksA = [
+    [1,2],
+    [3,4],
+    [5,6],
+]

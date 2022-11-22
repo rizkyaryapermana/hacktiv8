@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <h2>Login untuk melanjutkan</h2>
+
+        <form action="">
+            <label for="username">Username: </label>
+            <input type="text" name="username" id="username" /> <br/>
+
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" /> <br/><br/>
+
+            <button type="submit" id="btn-login">Login</button> <br/><br/>
+
+            <div id="result"></div>
+
+        </form>
+
+        <script>
+            let btnLogin = document.getElementById('btn-login');
+
+            let data_user = [
+                {
+                    username: 'rizki',
+                    password: '12345',
+                    nim: '99382',
+                    nama: 'Rizki Cahyana',
+                    jurusan: 'Pendidikan Ilmu Komputer'
+                },
+                {
+                    username: 'indra',
+                    password: '12345',
+                    nim: '99382',
+                    nama: 'Indra Rohman',
+                    jurusan: 'Teknik Industri'
+                },
+                {
+                    username: 'rahmat',
+                    password: '12345',
+                    nim: '99382',
+                    nama: 'Rahmat Affandi',
+                    jurusan: 'Elektronika Instrumentasi'
+                }
+            ];
+
+            console.log(data_user);
+
+            btnLogin.addEventListener('click', function(e){
+                e.preventDefault();
+                
+                let username = document.getElementById('username').value;
+                let password = document.getElementById('password').value;
+                let status = false;
+
+                for(let i = 0; i < data_user.length; i++){
+                    if(data_user[i].username === username && data_user[i].password === password){
+                        status = true;
+                        // simpan ke localStorage
+                        // localStorage.setItem('nama_key', 'nilai');
+                        localStorage.setItem('nim', data_user[i].nim);
+                        localStorage.setItem('nama', data_user[i].nama);
+                        localStorage.setItem('jurusan', data_user[i].jurusan);
+
+                        // simpan ke cookies
+                        document.cookie = 'a=abc';
+                        document.cookie = 'nim='+data_user[i].nim;
+                        document.cookie = 'nama='+data_user[i].nama;
+                        document.cookie = 'jurusan='+data_user[i].jurusan;
+
+                        break;
+                    }
+                }
+
+                if(status){ // status == true
+                    // get data dari localStorage
+                    // localStorage.getItem('nama_key');
+                    console.log('nim: ' + localStorage.getItem('nim'));
+                    console.log('nama: ' + localStorage.getItem('nama'));
+                    console.log('jurusan: ' + localStorage.getItem('jurusan'));
+
+                    displayResult(status);
+
+                }
+
+                /*
+                    extras:
+                    hapus data di localStorage
+                    localStorage.removeItem('nama_key');
+                */
+
+            });
+
+            function displayResult(status){
+                document.getElementById('result').innerText = status;
+                setTimeout(() => {
+                    alert('Anda akan dialihkan ke Dashboard..');
+                    
+                    window.location = 'http://127.0.0.1:5500/pertemuan16/dashboard.html';
+                }, 3000);
+            }
+
+            // displayResult(status);
+
+            // setTimeout(displayResult, 1000);
+
+
+
+        </script>
+
+
+    </div>
+
+</body>
+</html>

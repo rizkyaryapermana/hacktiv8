@@ -1,0 +1,115 @@
+.email-box .input-group .btn-news {
+  margin-top: 50px;
+  margin-bottom: 40px;
+
+}
+.input-group .btn-news i {
+  color: white;
+  width: 19px;
+  height: 20px;
+}
+.email-box {
+  height: 383px;
+  border-radius: 40px;
+}
+.email-box .sub-heading span {
+  margin-top: 20px;
+}
+.email-box .input-group  input{
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.text-uppercase { 
+  font-weight: 700;
+}
+.list-unstyled .text-next {
+  font-weight: 400; 
+  text-decoration: none;
+}
+
+
+.product {
+  margin-top: 7rem;
+  margin-bottom: 3rem;
+}
+.product .box-product {
+  width: 85%;
+  margin: auto;
+  padding: 45px 25px;
+  border-radius: 50px;
+  height: 33rem;
+  background-color: var(--bg-primary);
+}
+
+.product .box-product .card-product {
+  width: 100%;
+  height: 100%;
+  margin: 3rem auto;
+  border-radius: 15px;
+  z-index: 3;
+}
+.product .box-product .card-product.second {
+  width: 100%;
+  margin: 5rem auto;
+  opacity: 0.8;
+  z-index: 3;
+}
+
+.product .product-text {
+  max-width: 18rem;
+  padding: 10px 30px;
+  margin-top: 9rem;
+}
+.product .product-text .product-title {
+  color: var(--color-textPrimary);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+}
+.product .product-text .sub-title-product {
+  font-size: 12px;
+  color: var(--color-textPrimary);
+  font-weight: 400;
+  margin-top: 20px;
+}
+.product .product-text .btn-product {
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid #234cad;
+  border-radius: 30px;
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 8px 20px;
+  color: var(--color-textPrimary);
+}
+.product .product-text .material-icons {
+  margin-left: 10px;
+  display: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+.product .product-text .btn-product:hover {
+  background-color: var(--color-textPrimary);
+  color: #f2f6ff;
+  font-weight: 800;
+}
+.product .box-product .card-product .product-content {
+  width: 10rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+.product .box-product .card-product .name-product {
+  color: var(--color-textPrimary);
+  width: 5rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+}

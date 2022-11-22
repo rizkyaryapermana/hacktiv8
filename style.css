@@ -1,0 +1,27 @@
+body{
+    background-color: white;
+max-width: 100%;
+
+}
+.navbar{
+    background-color: white;
+    max-width: 100%;
+    display: block;
+    position: absolute;
+}
+.card{
+    max-width: 100%;
+   
+}
+.card-header{
+    text-align: center;
+}
+.card-body{
+    
+    background-color:rgb(233, 232, 232);
+}
+
+.text-header{
+    font-size: 40px; 
+    
+}

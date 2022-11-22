@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function cekAngka(angka) {
+  if (typeof angka != "number") {
+    return "Anda memasukkan bukan angka";
+  } else {
+    if (angka % 2 == 0) {
+       return "angka Genap";
+     } else if (angka % 2 == 1) {
+      return "Angka ganjil";
+    }
+  }
+ }
+
+ const angka = cekAngka("1");
+ console.log(angka);
+    </script>
+</body>
+</html>

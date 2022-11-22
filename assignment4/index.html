@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assigment 4</title>
+  
+    
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body onload="hiddenLoading()">
+    <div class="overlay" id="loading">
+      
+    </div>
+    <header class="tracker">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-md-8 col-12">
+            <div class="kotak-tracker">
+              <div class="row">
+                <div class="col-12">
+                  <div class="kotak-judul">
+                    <h3 style="text-align: center ;">COVID-19 </h3>
+                  </div>
+                </div>
+              </div>
+              <div class="row trackerOnline mt-5" style="text-align: center;">
+                <div class="col-12">
+                  <div class="form-tracker">
+                    <input
+                      type="text"
+                      name="inputNegara"
+                      id="inputNegara"
+                      class="form-control"
+                      value="indonesia"
+                    />
+                    <input
+                      type="date"
+                      name="inputDate"
+                      id="inputDate"
+                      class="form-control"
+                    />
+                    <button class="btn btn-form" id="cariTracker">Cari</button>
+                  </div>
+                </div>
+              </div>
+              <div class="negara-tracker" id="negaraTracker" style="text-align: center;"></div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="hasil">
+                  <div style="text-align: center;">
+                      <h6 class="card-subtitle mb-2">Active Cases</h6>
+                      <img src="download-removebg-preview.png" alt="">
+                      <p class="card-text" id="activeCase"></p>
+                  </div>               
+                  <div style="text-align: center;">
+                      <h6 class="card-subtitle mb-2">New Cases</h6>
+                      <img src="download-removebg-preview (1).png" alt="">
+                      <p class="card-text" id="newCases"></p>
+                  </div>
+                  <div style="text-align: center;">
+                      <h6 class="card-subtitle mb-2">Recovered Cases</h6>
+                      <img src="download-removebg-preview (2).png" alt="">
+                      <p class="card-text" id="recoverCases"></p>
+                  </div>
+                  <div style="text-align: center;">                     
+                      <h6 class="card-subtitle mb-2">Total Cases</h6>
+                      <img src="download-removebg-preview (3).png" alt="">
+                      <p class="card-text" id="totalCases"></p>
+                  </div>
+                  <div style="text-align: center;">   
+                    <h6 class="card-subtitle mb-2">Total Deaths</h6>
+                    <img src="download-removebg-preview (4).png" alt="">
+                    <p class="card-text" id="totalDeaths"></p>
+                  </div>
+                  <div style="text-align: center;">   
+                      <h6 class="card-subtitle mb-2">Total Test</h6>
+                      <img src="download-removebg-preview (5).png" alt="">
+                      <p class="card-text" id="totalTest"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+   
+    <!-- script js internal -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+    <h5 class="hari-ini"></h5>
+    <script>
+        
+        function hariIni() {
+        const tanggal = new Date();
+        const sekarang = tanggal.getDate();
+        console.log(`tanggal : ${sekarang}`);
+        document.querySelector(
+          ".hari-ini"
+        ).innerHTML = `Sekarang tanggal  ${sekarang}`;
+      }
+      hariIni();
+      // function mereturn tanggal sekarang
+      function returnHariIni() {
+        const tanggal = new Date();
+        const sekarang = tanggal.getDate();
+        return `Sekarang tanggal : ${sekarang}`;
+      }
+         </script>
+</body>
+</html>

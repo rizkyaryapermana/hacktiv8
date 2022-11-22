@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="hasil"></p>
+<script>
+
+    let titimangsa_full = new Date();
+    
+    let tanggal = titimangsa_full.getDate();
+    let bulan = titimangsa_full.getMonth() + 1 ;
+    let tahun = titimangsa_full.getFullYear();
+
+    let arr_hari = ['Minggu', ' Senin', ' Selasa', 'Rabu', 'Kamis', "Jum'at", 'Sabtu'];
+    let arr_bulan = ['Januari', ' Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli','Agustus','September', 'Oktober', 'November', 'Desember'];
+
+    let jam = titimangsa_full.getHours();
+    let menit = titimangsa_full.getMinutes();
+    let detik = titimangsa_full.getSeconds();
+
+    console.log('titi mangsa:' +titimangsa_full);
+    console.log('hari:' +hari);
+    console.log('tanggal:' +tanggal);
+    console.log('bulan:' +bulan);
+    console.log('tahun:' +tahun);
+    console.log('jam:' +jam);
+    console.log('menit:' +menit);
+    console.log('detik:' +detik);
+
+    let new_date = tanggal + '-' + bulan + '-' + tahun;
+
+    let new_date_with_month_name = arr_hari[hari] + ', ' + tanggal +' ' + arr_bulan[bulan] + ' ' + tahun;
+
+    let new_time = jam + ':' + menit + ':' + detik;
+
+    console.log('custom tanggal dengan bulan:' + new_date_with_month_name);
+    console.log('custom tanggal:' + new_date);
+    console.log('toDateString:' + titimangsa_full.toDateString());
+    console.log('toISOString:' + titimangsa_full.toISOString());
+    console.log('toLocaleDateString: '+titimangsa_full.toLocaleDateString())
+    console.log('time:' + titimangsa_full.getTime());
+    console.log('custom time:' + new_time);
+
+
+    let localeDateString = titimangsa_full.toLocaleDateString();
+    let arr_new_date = localeDateString.split('/');
+
+    console.log('toLocaleDateString:' + localDateString);
+    console.log('arr_new_date:' + arr_new_date);
+    console.log('tgl:' + arr_new_date[1]);
+    console.log('bln:' + arr_new_date[0]);
+    console.log('thn:' + arr_new_date[2]);
+    
+   
+
+    let tanggalHariIni = new Date();
+    console.log(tanggalHariIni);
+
+    document.getElementById('hasil').innerHTML = titimangsa_full;
+
+    // document.querySelector('#hasil').innerHTML= tanggalHariIni;
+</script>
+
+</body>
+</html>

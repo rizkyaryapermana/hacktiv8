@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+
+        <h2>Login untuk melanjutkan</h2>
+
+        <form action="">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username"/> <br>
+
+
+        <label for="password">password:</label>
+        <input type="text" name="password" id="username"/> <br>
+
+
+        <button type="submit" id="btn-login">Login</button>
+
+
+        </form>
+
+        <script>
+            let btnLogin = document.getElementById
+            ('btn-login');
+
+            let data_user = [
+                {
+                username: 'arya',
+                password:   '123',
+                nim: '045',
+                nama: 'Arya permana',
+                jurusan: 'Teknik listrik'
+                },
+                {
+                username: 'rudi',
+                password:   '123',
+                nim: '045',
+                nama: 'Rudi sinar',
+                jurusan: 'Teknik listrik'
+                },
+                {
+                username: 'Budi',
+                password:   '123',
+                nim: '045',
+                nama: 'Budi gundala',
+                jurusan: 'Teknik listrik'
+                }
+            ];
+
+            btnLogin.addEventListener('click',function(e){e.preventDefault});
+
+            let username = document.getElementById('username').value;
+            let password = document.getElementById('password').value;
+            let status = false;
+            
+            for (let i = 0; i< data_user.length; i++){
+                if(data_user[i].username === username && data_user[i]
+                .password === password){
+                   // status = true;
+                    localStorage.setItem('nim', data_user[i].nim);
+                    localStorage.setItem('nama', data_user[i].nama);
+                    localStorage.setItem('jurusan', data_user[i].jurusan);
+
+                    document.cookie = 'a=abc';
+                    document.cookie = 'nim='+data_user[i].nim;
+                    document.cookie = 'nama='+data_user[i].nama;
+                    document.cookie = 'jurusan='+data_user[i].jurusan;
+
+                    break;
+                }
+            }
+
+            console.log('status' + status);
+        </script>
+
+    </div>
+
+</body>
+</html>
